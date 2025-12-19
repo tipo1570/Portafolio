@@ -8,81 +8,253 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <!--Header y Nav bar-->
-    <header class="header-nav">
-        <Nav class="navbar-expand-lg logo-navbar navbar-dark shadow-sm">
+    <header id="header-nav" class="header-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-purple shadow-sm">
             <div class="container-fluid">
-                
-                <!-- Logo -->
-                <a class="navbar-brand d-flex justify-content-start" href="#">
-                    <img src="/Propio/Portafolio/Imagenes/ChatGPT_Image_14_dic_2025_01_13_34_a.m.svg" alt="RIPPE" class="logo-navbar">
-                </a>
 
-                <!-- Botón hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <a class="navbar-brand" href="#">
+                <img src="/Propio/Portafolio/Imagenes/ChatGPT_Image_14_dic_2025_01_13_34_a.m.svg"
+                    alt="RIPPE"
+                    class="logo">
+            </a>
 
-                <div class="collapse navbar-collapse justify-content-center" id="navMenu">
-                    <ul class="nav-links text-center mt-3 navbar-nav ms-auto">
-                        <li><a href="#Inicio">Inicio</a></li>
-                        <li><a href="#Proyectos">Proyectos</a></li>
-                        <li><a href="#AcercaDeMi">Acerca de mi</a></li>
-                        <li><a href="#Contactenos">Contactenos</a></li>
-                    </ul>
-                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#acercaDeMi">Acerca de mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contactenos">Contáctenos</a></li>
+                </ul>
+            </div>
 
             </div>
-        </Nav>
+        </nav>
     </header>
-
     <main>
         
         
         
         <!-- PRESENTACION -->
         
-        <h1>HOLA SOY JOSEPH</h1>
-        <div>
-            <div>
+        <div class="container my-5">
+            <div class="row align-items-start">
+                <br>    
+                
+                <h1 id="descripcion">HOLA SOY JOSEPH</h1>
+                <br>    
+                
+                <br>    
                 <h2>Acerca de mi</h2>
-                <p>
-                    Desarrollador Full Stack Java y estudiante de Ingeniería de Sistemas, con formación técnica y académica orientada al 
-                    desarrollo de software y al análisis de datos. Cuento con experiencia en tecnologías como Java, Python, JavaScript, HTML,
-                    CSS, SQL, Power BI, Git y Linux, aplicando principios de POO, buenas prácticas y pensamiento analítico en cada proyecto.
-                    Me considero una persona autodidacta, proactiva y enfocada en la mejora continua, con especial interés en el uso de la 
-                    información para optimizar y automatizar procesos, desarrollar soluciones robustas y mejorar la eficiencia operativa.
-                    He participado en proyectos freelance y roles técnicos, colaborando con diferentes equipos y clientes para identificar 
-                    necesidades, proponer soluciones efectivas y contribuir al cumplimiento de objetivos y al éxito de los proyectos, 
-                    incluso en entornos dinámicos y de alta exigencia.
-                </p>
-            </div>    
+                <br>    
                 
-                
-            <div>
-                <h4>Skills</h4>
-                <div class="Skills">
-                    <div class="SKILLS_Skills">Java</div>
-                    <div class="SKILLS_Skills">Python</div>
-                    <div class="SKILLS_Skills">JS</div>
-                    <div class="SKILLS_Skills">CSS</div>
-                    <div class="SKILLS_Skills">HTML</div>
-                    <div class="SKILLS_Skills">Linux</div>
-                    <div class="SKILLS_Skills">Bash</div>
-                    <div class="SKILLS_Skills">Git</div>
-                    <div class="SKILLS_Skills">GitHub</div>
-                    <div class="SKILLS_Skills">SQL</div>
-                    <div class="SKILLS_Skills">Power BI</div>
-                    <div class="SKILLS_Skills">Excel</div>
+                <div class="col-md-7">
+                <br>        
+                    <div class="descripcion">
+                        <p>
+                            Desarrollador Full Stack Java y estudiante de Ingeniería de Sistemas, con formación técnica y académica orientada al 
+                            desarrollo de software y al análisis de datos. Cuento con experiencia en tecnologías como Java, Python, JavaScript, HTML,
+                            CSS, SQL, Power BI, Git y Linux, aplicando principios de POO, buenas prácticas y pensamiento analítico en cada proyecto.
+                            Me considero una persona autodidacta, proactiva y enfocada en la mejora continua, con especial interés en el uso de la 
+                            información para optimizar y automatizar procesos, desarrollar soluciones robustas y mejorar la eficiencia operativa.
+                            He participado en proyectos freelance y roles técnicos, colaborando con diferentes equipos y clientes para identificar 
+                            necesidades, proponer soluciones efectivas y contribuir al cumplimiento de objetivos y al éxito de los proyectos, 
+                            incluso en entornos dinámicos y de alta exigencia.
+                        </p>
+                    </div>
+                    
                 </div>
-
-
-
+            
+                <br>    
+                
+                <div class="col-md-5">
+                    <br>
+                    <h4>Skills</h4>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <div class="SKILLS_Skills">Java</div>
+                        <div class="SKILLS_Skills">Python</div>
+                        <div class="SKILLS_Skills">JS</div>
+                        <div class="SKILLS_Skills">CSS</div>
+                        <div class="SKILLS_Skills">HTML</div>
+                        <div class="SKILLS_Skills">Linux</div>
+                        <div class="SKILLS_Skills">Bash</div>
+                        <div class="SKILLS_Skills">Git</div>
+                        <div class="SKILLS_Skills">GitHub</div>
+                        <div class="SKILLS_Skills">SQL</div>
+                        <div class="SKILLS_Skills">Power BI</div>
+                        <div class="SKILLS_Skills">Excel</div>
+                    </div>
+                </div>    
             </div>
-    
         </div>
         <hr>
+
+        
+    <!-- PROYECTOS  -->
+    
+    <section id="proyectos" class="container my-4">
+        <h1 class="mb-4">Proyectos</h1>
+
+        <div class="row align-items-center">
+
+            <!-- TEXTO FIJO -->
+            <div class="col-md-5">
+            <h3>Ejemplo 01</h3>
+            <p>
+                Descripción del proyecto. 
+            </p>
+            </div>
+
+            <!-- CARRUSEL (SOLO IMÁGENES) -->
+            <div class="col-md-7">
+
+            <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="https://images.pexels.com/photos/618612/pexels-photo-618612.jpeg"
+                        class="d-block w-100"
+                        style="height: 400px; object-fit: cover;"
+                        alt="Proyecto imagen 1">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/34514/spot-runs-start-la.jpg"
+                        class="d-block w-100"
+                        style="height: 400px; object-fit: cover;"
+                        alt="Proyecto imagen 2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg"
+                        class="d-block w-100"
+                        style="height: 400px; object-fit: cover;"
+                        alt="Proyecto imagen 3">
+                </div>
+
+                </div>
+
+                <!-- CONTROLES -->
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselPrincipal" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+                <br><br><br><br>
+            </div>
+            </div>
+            
+
+            <div class="row align-items-center mb-5">
+
+                <div class="col-md-5 order-md-2">
+                <h3>Ejemplo 02</h3>
+                <p>
+                    Otro proyecto
+                </p>
+                </div>
+
+                <div class="col-md-7 order-md-1">
+                <div id="carouselProyecto2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg"
+                            class="d-block w-100"
+                            style="height: 400px; object-fit: cover;">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/618612/pexels-photo-618612.jpeg"
+                            class="d-block w-100"
+                            style="height: 400px; object-fit: cover;">
+                    </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselProyecto2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselProyecto2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                </div>
+                </div>
+
+                <div class="row align-items-center mb-5">
+
+                <!-- TEXTO -->
+                <div class="col-md-5">
+                    <h3>Ejemplo 03</h3>
+                    <p>
+                    Proyecto enfocado en el desarrollo de una aplicación
+                    donde se aplicaron buenas prácticas, consumo de datos
+                    y diseño responsivo.
+                    </p>
+                </div>
+
+                <!-- CARRUSEL -->
+                <div class="col-md-7">
+                    <br><br><br>
+
+                    <div id="carouselProyecto3" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
+                            class="d-block w-100"
+                            style="height: 400px; object-fit: cover;"
+                            alt="Proyecto 3 imagen 1">
+                        </div>
+
+                        <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
+                            class="d-block w-100"
+                            style="height: 400px; object-fit: cover;"
+                            alt="Proyecto 3 imagen 2">
+                        </div>
+
+                        <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
+                            class="d-block w-100"
+                            style="height: 400px; object-fit: cover;"
+                            alt="Proyecto 3 imagen 3">
+                        </div>
+
+                    </div>
+
+                    <!-- CONTROLES -->
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselProyecto3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselProyecto3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    </div>
+                </div>
+
+                </div>
+
+        <hr class="mt-5">
+        </section>
 
 
 
@@ -90,72 +262,180 @@
 
         <!-- EDUCACION  -->
         
-        <div>
+        <div class="acercaDeMi" id="acercaDeMi">
+        <div class="container my-5">
+        <div class="row align-items-start">
+        <h1>Estudios</h1>
 
-            <h2>Estudios</h2>
-            <div>
-                <div class="EDUCACION">Universidad EAN | Ingeniería en Sistemas </div><img src="https://play-lh.googleusercontent.com/caVBQgBKKK0F9Iyc20DAHDPyq5pCwYIxJK3nhHDjlq8vuG5peT-KCHA9OdNRRMxq23a6=w600-h300-pc0xffffff-pd" alt="EAN"><br> 
-                <div class="EDUCACION">Generation colombia | Desarrollador JAVA FullStack </div><img src="https://nodesk.co/remote-companies/assets/logos/generation.b6d7fb673fd22222b2cc72a8ee1884c8133a92b814aa65b9b8ed0ee0e51b25da.jpg" alt="Generation"><br>
-                <div class="EDUCACION">Bit institute | Data Science </div><img src="https://fedesoft.org/wp-content/uploads/2022/09/Logo__BIT-1.png" alt="BIT"><br>
-                <div class="EDUCACION">Colombo Americano | Ingles B2 </div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQLVvzSoUPvgeImhjOCzmZHi4sqMqqsYx6NQ&s" alt="Colombo"><br>
+        <!-- ITEM ESTUDIO -->
+        <div class="info-section">
+            <br>
+            <!-- TEXTO -->                             
+            <div class="col-md-12">
+            <strong><h5>Universidad EAN | Ingeniería en Sistemas</h5></strong>
+            <div class="estudio-texto">
+            <p>
+                Durante mi formación universitaria adquirí conocimientos en el lenguaje de
+                programación Python, así como experiencia en el uso de sistemas Linux y el
+                manejo de su consola (Bash). Además, desarrollé bases sólidas en redes y
+                hardware, lo que me permite comprender el funcionamiento integral de los
+                sistemas y su interacción a nivel técnico.
+            </p><br>
             </div>
-        </div>
-        
-        
-        <!-- PROYECTOS  -->
-        
-        <section class="container my-4">
-            <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p>Ejemplo 01</p>
-                        <img src="https://images.pexels.com/photos/618612/pexels-photo-618612.jpeg?_gl=1*d74xd8*_ga*OTAzMzk2NzYzLjE3NjI5NjU5NzM.*_ga_8JE65Q40S6*czE3NjQwMDEyMzgkbzUkZzEkdDE3NjQwMDEzMTMkajYwJGwwJGgw"
-                        class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Running1">
-                    </div>
-                    <div class="carousel-item active">
-                        <p>Ejemplo 01</p>
-                        <img src="https://images.pexels.com/photos/34514/spot-runs-start-la.jpg?_gl=1*1h6dvoi*_ga*OTAzMzk2NzYzLjE3NjI5NjU5NzM.*_ga_8JE65Q40S6*czE3NjQwMDU4NjMkbzYkZzEkdDE3NjQwMDU5MDAkajIzJGwwJGgw"
-                        class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Running2">
-                    </div>
-                    <div class="carousel-item">
-                        <p>Ejemplo 01</p>
-                        <img src="https://images.pexels.com/photos/7294663/pexels-photo-7294663.jpeg?_gl=1*n7xgfl*_ga*OTAzMzk2NzYzLjE3NjI5NjU5NzM.*_ga_8JE65Q40S6*czE3NjQwMDEyMzgkbzUkZzEkdDE3NjQwMDE2NDckajMkbDAkaDA."
-                        class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Natacion1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://images.pexels.com/photos/8688531/pexels-photo-8688531.jpeg?_gl=1*7vtnd6*_ga*OTAzMzk2NzYzLjE3NjI5NjU5NzM.*_ga_8JE65Q40S6*czE3NjQwMDU4NjMkbzYkZzEkdDE3NjQwMDU4NjkkajU0JGwwJGgw"
-                        class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Natacion2">
-                    </div>
-                    <div class="carousel-item">
-                        <p>Ejemplo 01</p>
-                        <img src="https://images.pexels.com/photos/3642537/pexels-photo-3642537.jpeg?_gl=1*mcfhv3*_ga*OTAzMzk2NzYzLjE3NjI5NjU5NzM.*_ga_8JE65Q40S6*czE3NjQwMDEyMzgkbzUkZzEkdDE3NjQwMDE0ODkkajMyJGwwJGgw"
-                        class="d-block w-100" style="height: 400px; object-fit: cover;" alt="ciclismo1">
-                    </div>
-                    <div class="carousel-item">
-                        <p>Ejemplo 01</p>
-                        <img src="https://images.pexels.com/photos/248547/pexels-photo-248547.jpeg?_gl=1*1219mbx*_ga*OTAzMzk2NzYzLjE3NjI5NjU5NzM.*_ga_8JE65Q40S6*czE3NjQwMDU4NjMkbzYkZzEkdDE3NjQwMDU5MzMkajUzJGwwJGgw"
-                        class="d-block w-100" style="height: 400px; object-fit: cover;" alt="ciclismo2">
-                    </div>
-                    
-                </div>
-            
-            <!-- Botones  -->
+            </div>
+
+            <!-- LOGO -->
+            <div class="col-md-5">
+            <div class="estudio-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5Nm0fUT4UAmW9MxkRyUej2lTLsCD1sw1vw&s"
+            class="logoEstudios" alt="Universidad EAN">
+            </div><br>
+            </div>
+
+
+
+            <div class="col-md-7"></div>            
+            <strong><h5>Generation colombia | Desarrollador JAVA FullStack</h5></strong>
+            <div class="estudio-texto">
+            <p>
+                Durante el bootcamp desarrollé habilidades blandas clave y adquirí sólidos conocimientos en desarrollo web, 
+                trabajando con tecnologías como Java, PHP, HTML y CSS. Además, fortalecí mis bases en bases de datos y en la 
+                aplicación de buenas prácticas para la escritura de código limpio, estructurado y mantenible.
+            </p><br>
+            </div>
+            </div>
+
+            <div class="col-md-5">
+            <div class="estudio-logo">
+            <img src="https://nodesk.co/remote-companies/assets/logos/generation.b6d7fb673fd22222b2cc72a8ee1884c8133a92b814aa65b9b8ed0ee0e51b25da.jpg" 
+            class="logoEstudios" alt="Generation">
+            </div><br>
+            </div>
+
+
+
+
+            <div class="col-md-7"></div>
+            <strong><h5>Bit institute | Data Science</h5></strong>
+            <div class="estudio-texto">
+            <p>
+                Aprendí a analizar grandes volúmenes de datos, así como a limpiar y transformar información de manera eficiente,
+                utilizando herramientas como Power BI y Excel, con el objetivo de obtener insights claros y apoyar la toma de decisiones.
+            </p><br>
+            </div>
+            </div>
+
+            <div class="col-md-5">
+            <div class="estudio-logo">
+            <img src="https://fedesoft.org/wp-content/uploads/2022/09/Logo__BIT-1.png" 
+            class="logoEstudios" alt="BIT">
+            </div><br>
+            </div>
                 
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
 
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+
+            <strong><h5>Colombo Americano | Ingles B2</h5></strong>
+            <div class="estudio-texto">
+            <p>
+                Cuento con la capacidad de mantener conversaciones efectivas y comprender lenguaje técnico, lo que me permite
+                colaborar de forma eficiente en equipos multidisciplinarios y comunicar ideas técnicas de manera clara.
+            </p><br>
+            </div>
+
+            <div class="col-md-5">
+            <div class="estudio-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQLVvzSoUPvgeImhjOCzmZHi4sqMqqsYx6NQ&s" 
+            class="logoEstudios" alt="Colombo">
+            </div><br>
+            </div>
 
         </div>
-    </section>
+        </div>
+        </div>
+        </div>
 
+        <br><hr><br>
+
+         <div class="acercaDeMi" id="acercaDeMi">
+        <div class="container my-5">
+        <div class="row align-items-start">
+        <h1>Experiencia</h1>
+
+        <!-- ITEM ESTUDIO -->
+        <div class="info-section">
+            <br>
+            <!-- TEXTO -->                             
+            <div class="col-md-12">
+            <strong><h5>Universidad EAN | Ingeniería en Sistemas</h5></strong>
+            <div class="estudio-texto">
+            <p>
+                Durante mi formación universitaria adquirí conocimientos en el lenguaje de
+                programación Python, así como experiencia en el uso de sistemas Linux y el
+                manejo de su consola (Bash). Además, desarrollé bases sólidas en redes y
+                hardware, lo que me permite comprender el funcionamiento integral de los
+                sistemas y su interacción a nivel técnico.
+            </p><br>
+            </div>
+            </div>
+
+            <!-- LOGO -->
+            <div class="col-md-5">
+            <div class="estudio-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHI1qyQO6UOGaYxRROOBuSnTnL94u43FGnTw&s"
+            class="logochamba" alt="Universidad EAN">
+            </div><br>
+            </div>
+
+
+
+            <div class="col-md-7"></div>            
+            <strong><h5>Generation colombia | Desarrollador JAVA FullStack</h5></strong>
+            <div class="estudio-texto">
+            <p>
+                Durante el bootcamp desarrollé habilidades blandas clave y adquirí sólidos conocimientos en desarrollo web, 
+                trabajando con tecnologías como Java, PHP, HTML y CSS. Además, fortalecí mis bases en bases de datos y en la 
+                aplicación de buenas prácticas para la escritura de código limpio, estructurado y mantenible.
+            </p><br>
+            </div>
+            </div>
+
+            <div class="col-md-5">
+            <div class="estudio-logo">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/8e6c1312446205.56269b9807e55.jpg" 
+            class="logochamba" alt="Generation">
+            </div><br>
+            </div>
+
+
+
+            <div class="col-md-7"></div>
+            <strong><h5>Bit institute | Data Science</h5></strong>
+            <div class="estudio-texto">
+            <p>
+                Aprendí a analizar grandes volúmenes de datos, así como a limpiar y transformar información de manera eficiente,
+                utilizando herramientas como Power BI y Excel, con el objetivo de obtener insights claros y apoyar la toma de decisiones.
+            </p><br>
+            </div>
+            </div>
+
+            <div class="col-md-5">
+            <div class="estudio-logo">
+            <img src="https://fedesoft.org/wp-content/uploads/2022/09/Logo__BIT-1.png" 
+            class="logochamba" alt="BIT">
+            </div>
+            </div>
+                
+
+        </div>
+        </div>
+        </div>
+        </div>
+
+            
 
       <!-- FORMULARIO -->
-    <section class="container my-5">
+    <section id="Contactenos" class="container my-5">
         <div class="row justify-content-center">
             <div class="col-md-8 form-container">
 
@@ -203,29 +483,29 @@
         <div class="row">
 
             <div class="col-md-4 mb-3">
-                <h5 class="text-uppercase">Letal cosplay</h5>
-                <p>Letal Cosplay ofrece productos de alta calidad a precios accesibles, con opciones personalizadas y acabados profesionales que se adaptan a cada cliente.</p>
+                <p>Most people dont fail because they picked the wrong path they fail because they never stick to one long enough too see results</p>
             </div>
 
             <div class="col-md-4 mb-3">
                 <h5 class="text-uppercase">Secciones</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#Proyectos">Proyectos</a></li>
-                    <li><a href="#AcercaDeMi">Acerca de mi</a></li>
-                    <li><a href="#Contactenos">Contactenos</a></li>
+                    <li><a rel="noopener noreferrer" href ="#header-nav">Inicio</a></li>
+                    <li><a rel="noopener noreferrer" href="#acercaDeMi">Acerca de mi</a></li>
+                    <li><a rel="noopener noreferrer" href="#proyectos">Proyectos</a></li>
                 </ul>
             </div>
 
             <div class="col-md-4 mb-3">
-                <h5 class="text-uppercase">Síguenos</h5>
+                <h5 class="text-uppercase">Mas acerca de mi
+
+                </h5>
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="bi bi-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicolaschiquiza/"><i class="bi bi-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" rel="noopener noreferrer" href="mailto:chiquizanicolas@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/tipo1570"><i class="bi bi-github"></i></a></li>
                 </ul>
             </div>
-
+s
         </div>
 
         <hr class="mb-4">
@@ -235,6 +515,8 @@
     </div>
 </footer>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

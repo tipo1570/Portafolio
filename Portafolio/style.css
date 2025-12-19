@@ -1,53 +1,88 @@
-/* ======================
-   HEADER / NAVBAR
-====================== */
-.header-nav {
-    background-color: #240115;
-    border-bottom: 1px solid #b3b3b3;
+/* === header  === */
+
+.logo {
+  height: 70px;
+  width: auto;
 }
 
-/* Color real del navbar de Bootstrap */
-.bg-dark-purple {
-    background-color: #240115 !important;
+.navbar-nav .nav-link {
+  color: #0C1B33;
+  margin: 0 12px;
+  font-size: 14px;
 }
 
-/* LOGO */
-.logo-navbar {
-    height: 70px;
-    width: auto;
-}
-
-/* LINKS DEL MENÚ */
-.nav-links .nav-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 12px;
-    padding: 5px 4px;
-    font-size: 14px;
-  
-}
-
-/* Último sin línea */
-.nav-links .nav-item:last-child .nav-link {
-    border-right: none;
-}
-
-/* Hover subrayado */
-.nav-links .nav-link:hover {
-    border-bottom: 2px solid black;
+.navbar-nav .nav-link:hover {
+  border-bottom: 2px solid white;
 }
 
 
+/* === BODY  === */
+
+.descripcion{
+    border-radius: 10px;
+    background-color: #0C1B33;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: left;
+    width: fit-content;
+    padding: 20px 20px;
+}
+
+.SKILLS_Skills{
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: #F0A202;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    
+
+}
 
 
 
-/* === FOOTER ESTILO IGUAL A LA IMAGEN === */
+
+.estudio-texto {
+    flex: 1;
+    max-width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    line-height: 1.6;
+
+}
+
+.acercaDeMi{
+    padding: 60px;
+
+}
+
+.logoEstudios{
+    max-width: 120px;
+    object-fit: contain;
+    border-radius: 60px ;
+    border-color: #F0A202;
+    border-style: solid;
+
+}
+
+
+.logochamba{
+    max-width: 120px;
+    object-fit: contain;
+    border-radius: 60px ;
+    border-color: #3F7CAC;
+    border-style: solid;
+
+}
+
+/* === FOOTER  === */
 
 footer {
-    background-color: #000;   /* Fondo negro */
+    background-color: #0C1B33;   /* Fondo negro */
     color: white;             /* Texto blanco */
     padding: 40px 0;
-    font-family: "Poppins", sans-serif;
     text-align: center;
 }
 
@@ -80,7 +115,7 @@ footer .list-inline-item a {
 
 /* Línea separadora */
 footer hr {
-    border-color: #333;
+    border-color: #3F7CAC;
     width: 90%;
     margin: 25px auto;
 }
